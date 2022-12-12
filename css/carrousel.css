@@ -1,7 +1,7 @@
 #carrousel ul {
     display: flex;
     overflow: auto;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 #carrousel ul li {

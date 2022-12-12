@@ -10,10 +10,11 @@
 
 .progress-bar {
     width: 100%;
-    height: 30px;
+    height: 24px;
     background-color: gainsboro;
     border-radius: 5px;
     display: flex;
+    font-size: 13px;
 }
 
 .progress-bar > div {
@@ -54,21 +55,21 @@
 }
 
 .progress-bar > div.blue {
-    background-color: #00007a;
+    background-color: #4e4e7a;
 }
 
 .progress-bar > div.orange {
-    background-color: #c45f00;
+    background-color: #bf966f;
 }
 
 .progress-bar > div.green {
-    background-color: #015501;
+    background-color: #3b543b;
 }
 
 .progress-bar > div.red {
-    background-color: #750000;
+    background-color: #db6565;
 }
 
 .progress-bar > div.pink {
-    background-color: #a500a5;
+    background-color: #d18cd1;
 }
