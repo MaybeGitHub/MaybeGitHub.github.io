@@ -1,0 +1,55 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-group > label, 
+.form-group > span {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group textarea {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    outline-color: #a0a0ff;
+    padding: 5px 12px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #4b4b4b;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="radio"] + label {
+    cursor: pointer;
+}
+
+.form-group input[type="radio"] {
+    height: 12px;
+}
+
+.form-group input[type="radio"] + label {
+    margin-right: 10px;
+}
+
+.form-group input[type="radio"]:checked + label {
+    color: #b90000;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.form-group button {
+    width: 150px;
+    height: 30px;
+    border: 0;
+    background-color: #5353c1;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}

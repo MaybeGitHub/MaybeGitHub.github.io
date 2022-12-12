@@ -1,0 +1,17 @@
+#carrousel ul {
+    display: flex;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+
+#carrousel ul li {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carrousel img {
+    width: 150px;
+    height: 100px;
+}

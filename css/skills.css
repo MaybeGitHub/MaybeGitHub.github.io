@@ -1,0 +1,74 @@
+#skills > ul > li {
+    padding-bottom: 10px;
+}
+
+#skills > ul > li > span {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    display: flex;
+}
+
+.progress-bar > div {
+    border-radius: inherit;
+    height: inherit;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar.dogs > div {
+    width: 87%;
+}
+
+.progress-bar.cats > div {
+    width: 24%;
+}
+
+.progress-bar.massachusetts > div {
+    border-radius: inherit;
+}
+
+.progress-bar.massachusetts > div.green {
+    width: 63%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.progress-bar.massachusetts > div.red {
+    width: 37%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.progress-bar.home > div.pink {
+    width: 75%;
+}
+
+.progress-bar > div.blue {
+    background-color: #00007a;
+}
+
+.progress-bar > div.orange {
+    background-color: #c45f00;
+}
+
+.progress-bar > div.green {
+    background-color: #015501;
+}
+
+.progress-bar > div.red {
+    background-color: #750000;
+}
+
+.progress-bar > div.pink {
+    background-color: #a500a5;
+}

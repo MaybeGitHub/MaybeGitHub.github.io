@@ -1,0 +1,32 @@
+#grid ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+
+#grid li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid img {
+    width: 150px;
+    height: 100px;
+}
+
+@media only screen and (min-width: 375px) {
+    #grid ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #grid ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}

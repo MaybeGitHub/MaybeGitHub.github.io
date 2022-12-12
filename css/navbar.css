@@ -1,0 +1,86 @@
+label[for="is-menu-collapsed"],
+#is-menu-collapsed {
+    display: none;
+}
+
+ul.burger-menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul.burger-menu > li {
+    flex: 1 1;
+    margin: 0 5px;
+}
+
+ul.burger-menu > li > a {
+    text-decoration: none;
+    color: #4b4b4b;
+    flex: 1 1;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: none linear .35s;
+    transition-property: background-color, color; 
+    border-radius: 6px;
+}
+
+ul.burger-menu > li > a:hover {
+    background-color: #4d4d4d;
+    color: white;
+}
+
+@media only screen and (max-width: 375px) {
+    label[for="is-menu-collapsed"] {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        margin-bottom: 5px;
+        background-color: white;
+        border: 1px solid #4b4b4b;
+        border-radius: 5px;
+        padding: 5px;
+        align-items: center;
+    }
+
+    label[for="is-menu-collapsed"]:before {
+        content: " ";
+        border-top: 1px solid #4b4b4b;
+        display: inline-block;
+        height: 5px;
+        width: 100%;
+    }
+
+    label[for="is-menu-collapsed"]:after {
+        content: " ";
+        border-top: 1px solid #4b4b4b;
+        border-bottom: 1px solid #4b4b4b;
+        display: inline-block;
+        height: 5px;
+        width: 100%;
+    }
+
+    label[for="is-menu-collapsed"]:hover {
+        background-color: whitesmoke;
+    }
+
+    ul.burger-menu {
+        display: none;
+    }
+
+    #is-menu-collapsed:checked + label + ul.burger-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: gainsboro;
+        padding: 5px;
+    }
+
+    #is-menu-collapsed:checked + label + ul.burger-menu > li {
+        margin: 5px;
+    }
+}
